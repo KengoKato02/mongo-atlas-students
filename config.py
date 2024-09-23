@@ -10,5 +10,5 @@ if CONNECTION_STRING is None:
     raise ValueError("The environment variable MONGODB_URI is not set.")
 
 client = MongoClient(CONNECTION_STRING)
-db = client['testDatabase']
-collection = db['testCollection']
+db = client['students_tracker']
+collection = db['students_tracker_collection']

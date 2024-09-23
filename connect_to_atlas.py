@@ -11,8 +11,8 @@ if CONNECTION_STRING is None:
 
 client = MongoClient(CONNECTION_STRING)
 
-db = client['testDatabase']
-collection = db['testCollection']
+db = client['students_tracker']
+collection = db['students_tracker_collection']
 
 sample_document = {"name": "Alice", "age": 25, "city": "New York"}
 result = collection.insert_one(sample_document)
